@@ -106,9 +106,9 @@ docker run --rm -dt -e DATABASE_URL=postgres://user:pass@host/dbname -p 9000:900
 
 The [configuration file](config/pg_featureserv.toml.example) is automatically read from the following locations, if it exists:
 
-* In the system configuration directory, at `/etc/pg_featureserv.toml`
 * Relative to the directory from which the program is run, `./config/pg_featureserv.toml`
 * In a root volume at `/config/pg_featureserv.toml`
+* In the system configuration directory, at `/etc/pg_featureserv.toml`
 
 To specify a configuration file directly use the `--config` commandline parameter.
 In this case configuration files in other locations are ignored.
